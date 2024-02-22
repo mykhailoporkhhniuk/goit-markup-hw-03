@@ -56,6 +56,10 @@ body {
 /* =========== /Common styles =========== */
 
 /* =========== Page Header styles =========== */
+.page-header {
+    border-bottom: 1px solid #e7e9fc
+}
+
 .page-header-container {
     align-items: center;
     display: flex;
@@ -75,12 +79,11 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-
+    margin-right: 76px;
 }
 
-.header-logo {
+.header-logo-studio {
     color: #2e2f42;
-    margin-right: 76px;
 }
 
 .menu {
@@ -128,9 +131,6 @@ body {
 /* =========== Hero Section styles =========== */
 .hero {
     background-color: #2e2f42;
-}
-
-.hero-container {
     padding-top: 188px;
     padding-bottom: 188px;
 }
@@ -173,9 +173,22 @@ body {
 /* =========== /Hero Section styles =========== */
 
 /* =========== Benefits Section styles =========== */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .benefits-list {
     display: flex;
-    column-gap: 24px;
+    gap: 24px;
     justify-content: space-between;
 }
 
@@ -206,17 +219,19 @@ body {
 
 .our-team-list {
     display: flex;
-    column-gap: 24px;
+    gap: 24px;
 }
 
 .our-team-list-item {
     background-color: #FFFFFF;
     width: calc((100% - 3 * 24px) / 4);
-    padding-bottom: 32px;
+    border-radius: 0px 0px 4px 4px;
 }
 
-.our-team-list-img {
-    margin-bottom: 32px;
+.our-team-list-container {
+    padding-bottom: 32px;
+    padding-top: 32px;
+    
 }
 
 .our-team-list-title {
@@ -247,11 +262,13 @@ body {
 
 .portfolio-list-item {
     width: calc((100% - 2 * 24px) / 3);
-    padding-bottom: 32px;
 }
 
-.portfolio-list-img {
-    margin-bottom: 32px;
+.portfolio-list-container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .portfolio-list-title {
@@ -277,12 +294,12 @@ body {
     padding-bottom: 100px;
 }
 
-.logo {
+.footer-logo {
     display: inline-block;
     margin-bottom: 16px;
 }
 
-.footer-logo {
+.footer-logo-studio {
     color: #f4f4fd;
 }
 
